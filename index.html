@@ -3,32 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Document</title>
+    <title>My Page</title>
     <style>
-        /* This removes all default spacing around the edge of the screen */
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            }
+            padding: 40px; /* Adjust this to change your "margins" */
+            font-family: Arial, sans-serif; /* Professional font */
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
 
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        .content {
+            font-size: 24px; /* Make the text bigger */
+            color: #333;
         }
     </style>
 </head>
 <body>
 
-    <iframe src="document.pdf#view=FitH" type="application/pdf">
-        <p>Your browser does not support PDFs. 
-           <a href="document.pdf">Click here to download the PDF.</a>
-        </p>
-    </iframe>
+    <div class="content">
+        test
+    </div>
 
 </body>
 </html>
